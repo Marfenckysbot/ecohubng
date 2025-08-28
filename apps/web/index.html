@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="EcoHubNG — Your one‑stop eco‑solutions marketplace for Nigeria">
+  <title>EcoHubNG — Go Green, Earn Green</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+      animation: fadeUp 0.6s ease forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white fixed w-full z-20 shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">EcoHubNG</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#services" class="hover:underline transition">Services</a>
+        <a href="#vendors" class="hover:underline transition">Vendors</a>
+        <a href="#contact" class="hover:underline transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-green-600 md:hidden flex-col space-y-4 px-4 py-4">
+      <a href="#services" class="block hover:underline">Services</a>
+      <a href="#vendors" class="block hover:underline">Vendors</a>
+      <a href="#contact" class="block hover:underline">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-green-100 pt-28 reveal">
+    <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+      <h2 class="text-4xl font-bold mb-4">Go Green. Earn Green.</h2>
+      <p class="text-lg mb-6">Connecting Nigerians to eco‑friendly services in recycling, solar, organic produce, water systems, and sustainable building — all in one place.</p>
+      <a href="#contact" class="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 transition transform hover:scale-105">Book a Service</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-16 reveal">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-2">♻ Recycling Pickup</h4>
+        <p>Plastic, metal & e‑waste collection from your home or office.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-2">☀ Solar Energy</h4>
+        <p>Affordable solar kits for homes and small businesses.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-2">🌾 Organic Produce</h4>
+        <p>Farm‑fresh vegetables and goods delivered to your door.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-2">🏠 Green Construction</h4>
+        <p>Eco‑friendly design and materials sourcing for your builds.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded hover:shadow-lg transition transform hover:-translate-y-1">
+        <h4 class="font-semibold mb-2">💧 Water Systems</h4>
+        <p>Rainwater harvesting and filtration solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vendor Form -->
+  <section id="vendors" class="bg-green-50 py-16 reveal">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Become a Partner Vendor</h3>
+      <p class="mb-8">Join EcoHubNG’s network of trusted service providers and grow your business while helping Nigeria go green.</p>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <iframe src="https://forms.gle/kPgaFvzPuW9mN5q78?embedded=true"
+                width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0"
+                style="border: none;">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Form -->
+  <section id="contact" class="max-w-4xl mx-auto px-4 py-16 text-center reveal">
+    <h3 class="text-3xl font-bold mb-6">Book Your Eco‑Service</h3>
+    <p class="mb-8">Fill out the form below and we’ll connect you with the right provider.</p>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <iframe src="https://forms.gle/G7b32zrGRbz4jbea6?embedded=true"
+              width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0"
+              style="border: none;">
+        Loading…
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6 reveal">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>&copy; 2025 EcoHubNG. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Scroll reveal effect
+    const reveals = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      reveals.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          el.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>
