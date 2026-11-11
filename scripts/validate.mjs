@@ -14,7 +14,7 @@ if (!/<html\b/i.test(rootPage) || !/<\/html>/i.test(rootPage)) {
   errors.push('index.html is missing its opening or closing html element.');
 }
 for (const id of ['services', 'vendors', 'contact']) {
-  if (!new RegExp('id=["\\']' + id + '["\\']').test(rootPage)) {
+  if (!rootPage.includes('id="' + id + '"') && !rootPage.includes("id='" + id + "'")) {
     errors.push('Expected page section is missing: #' + id);
   }
 }
